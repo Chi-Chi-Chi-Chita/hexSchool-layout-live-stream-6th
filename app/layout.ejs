@@ -39,44 +39,6 @@
     </div>
     <div class="offcanvas-body text-white offcanvas-body-scroller p-0">
       <!--offcanvas-card-->
-      <div class="card mb-3 rounded-2">
-        <button type="button" class="btn-close" aria-label="Close"></button>
-        <div class="row g-0 p-4 h-100">
-          <!--card圖片-->
-          <div class="col-5 pe-4 d-flex justify-content-center">
-            <img src="https://fakeimg.pl/120x120/" class="img-fluid rounded-0" alt="...">
-          </div>
-          <!--card文字-->
-          <div class="col-7">
-            <div class="card-body p-0 h-100">
-              <div class="row g-0 h-100">
-                <!--card文字內容-->
-                <div class="col-9 d-flex flex-column">
-                  <h5 class="card-title mb-1 fw-bold text-black">2020 台味設計展</h5>
-                  <h5 class="card-title mb-1 text-black fw-medium">01 JUN - 31 OCT</h5>
-                  <p class="card-text text-dark">全票</p>
-                  <p class="h4 fw-bold text-black mt-auto">NT$350</p>
-                </div>
-                <!--card計數-->
-                <div class="col-3 d-flex flex-column justify-content-around">
-                  <a href="#" class="text-center">
-                    <span class="material-icons add">
-                      add
-                    </span>
-                  </a>
-                  <input type="text" class="number p-0 m-0 text-center w-100 border-0" value="01"
-                    onkeyup="value=value.replace(/^(0+)|[^\d]+/g,'')">
-                  <a href="#" class="text-center">
-                    <span class="material-icons sub">
-                      remove
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
     <div class="offcanvas-footer p-4 d-flex align-items-center">
       <p class="text-white fw-medium h4 me-6">小計</p>
@@ -88,7 +50,30 @@
   <%- contents %>
 
     <footer class="footer">
-      footer
+      <section class="footer-bg">
+        <div class="container">
+          <h3 class="text-white fw-bold mb-5">
+            想收到最新消息嗎?
+            <br>
+            快訂閱我們!
+          </h3>
+          <div class="input-group">
+            <input type="text" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04"
+              aria-label="Upload" placeholder="輸入您的電子信箱">
+            <button class="btn btn-secondary" type="button" id="inputGroupFileAddon04">訂閱</button>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container py-7">
+          <div class="footer-text-container d-flex flex-column flex-md-row align-items-md-center">
+            <p class="fs-3 me-md-4">EXHIBINECTION</p>
+            <p class="me-auto">© 2020. All Rights Reserved.</p>
+            <a href="#" class="h5 text-dark fw-normal me-md-6 me-lg-8 d-none d-md-block">Sing in</a>
+            <a href="#" class="h5 text-dark fw-normal me-md-6 me-lg-8 d-none d-md-block">Sing up</a>
+          </div>
+        </div>
+      </section>
     </footer>
 
     <script src="./assets/js/vendors.js"></script>
