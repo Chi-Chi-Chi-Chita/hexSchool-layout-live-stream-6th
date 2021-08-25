@@ -1,6 +1,4 @@
-*{
-  outline:1px dotted green;
-}
+
 .header{
   .badge{
     width: 22px;
@@ -25,8 +23,10 @@
 .footer{
   &-bg{
     height: 400px;
-    background-image:url("https://fakeimg.pl/1280x400/");
+    background-image:url("https://picsum.photos/id/1040/1280/400");
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   h3{
     padding-top: 222px;
